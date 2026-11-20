@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fazbear Entertainment – Site Oficial</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>★ FAZBEAR ENTERTAINMENT ★</h1>
+    <p>“Onde a fantasia e a diversão ganham vida!” – Site oficial, edição 1993</p>
+  </header>
+  <div class="marq"><span>Bem-vindo ao site da Fazbear Entertainment! | Aniversários com a banda inteira | Pizza quentinha todo dia</span></div>
+  <nav id="nav"></nav>
+
+  <main>
+    <section id="inicio">
+      <div class="hero">
+        <img class="logo" src="img/logo.png" alt="Freddy Fazbear’s Pizza – Where fantasy and fun come to life!">
+        <h2>A diversão começa aqui!</h2>
+        <p>Encontre uma pizzaria, faça seu pedido, conheça a banda e bata recordes nos jogos.</p>
+        <button class="btn" data-go="pizzarias">Achar pizzaria</button>
+        <button class="btn alt" data-go="conta">Criar conta</button>
+      </div>
+      <div class="grid">
+        <div class="card"><h3>Notícias</h3><p>Fique por dentro.</p><button class="btn" data-go="noticias">Abrir</button></div>
+        <div class="card"><h3>Pizzarias</h3><p>Mapa e sabores.</p><button class="btn" data-go="pizzarias">Abrir</button></div>
+        <div class="card"><h3>Mascotes</h3><p>Conheça a banda.</p><button class="btn" data-go="mascotes">Abrir</button></div>
+        <div class="card"><h3>Jogos</h3><p>Salve sua pontuação.</p><button class="btn" data-go="jogos">Abrir</button></div>
+      </div>
+    </section>
+
+    <section id="noticias"><h2>Notícias</h2><div id="news"></div></section>
+
+    <section id="pizzarias">
+      <h2>Pizzarias próximas</h2>
+      <p>Clique no mapa para dizer onde você está. As pizzarias são ordenadas pela distância.</p>
+      <svg id="map" viewBox="0 0 600 360" role="img" aria-label="Mapa esquemático das pizzarias"></svg>
+      <div id="plist"></div>
+    </section>
+
+    <section id="comprar"><h2>Fazer pedido</h2><div id="buy"></div></section>
+    <section id="mascotes"><h2>Os mascotes</h2><div class="lista" id="mas"></div></section>
+
+    <section id="jogos">
+      <h2>Fliperama Fazbear</h2>
+      <div class="row">
+        <select id="gsel">
+          <option value="A">Jogo A – Pegue a pizza</option>
+          <option value="B">Jogo B – Sequência da banda</option>
+          <option value="C">Jogo C – Reflexo do Foxy</option>
+        </select>
+        <b>Pontos: <span id="gp">0</span></b>
+      </div>
+      <div id="gbox" class="card"></div>
+      <h2>Ranking</h2><div id="rank"></div>
+    </section>
+
+    <section id="conta"><h2>Conta</h2><div id="acc"></div></section>
+  </main>
+
+  <footer>© 1993 Fazbear Entertainment, Inc.<span id="modo"></span></footer>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/games.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
